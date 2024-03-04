@@ -1,0 +1,38 @@
+{
+	"name": "geospread",
+	"version": "0.1.0",
+	"description": "Filter geo points for fast even distribution",
+	"main": "./dist/index.js",
+	"module": "./dist/index.mjs",
+	"types": "./dist/index.d.ts",
+	"repository": {
+		"url": "https://github.com/juanpujol/polyunion"
+	},
+	"scripts": {
+		"build": "tsup",
+		"format": "prettier --write .",
+		"lint": "eslint --fix .",
+		"test": "vitest"
+	},
+	"keywords": [
+		"geojson",
+		"polygons",
+		"spread",
+		"spatial",
+		"geospatial",
+		"haversine",
+		"performance"
+	],
+	"author": "juanpujol",
+	"license": "MIT",
+	"dependencies": {},
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "^7.1.0",
+		"eslint": "^8.57.0",
+		"eslint-config-prettier": "^9.1.0",
+		"prettier": "^3.2.5",
+		"tsup": "^8.0.2",
+		"typescript": "^5.3.3",
+		"vitest": "^1.3.1"
+	}
+}

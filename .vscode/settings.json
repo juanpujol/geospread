@@ -1,0 +1,5 @@
+{
+	"editor.formatOnSave": true,
+	"cSpell.words": ["bbox", "fbbox", "geospatial", "juanpujol", "geospread", "tsup"],
+	"githubPullRequests.ignoredPullRequestBranches": ["develop"]
+}
