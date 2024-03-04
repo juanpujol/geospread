@@ -2,6 +2,12 @@
 
 # GeoSpread Changelog
 
+## v0.1.2 (2024-03-04)
+
+### Fixes 🐞
+
+- Fix .npmignore to include only necessary files
+
 ## v0.1.1 (2024-03-03)
 
 ### Fixes 🐞
