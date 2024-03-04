@@ -1,12 +1,12 @@
 {
 	"name": "geospread",
 	"version": "0.1.0",
-	"description": "Filter geo points for fast even distribution",
+	"description": "Filter points by minimum distance in meters and optionally starting from a specific point",
 	"main": "./dist/index.js",
 	"module": "./dist/index.mjs",
 	"types": "./dist/index.d.ts",
 	"repository": {
-		"url": "https://github.com/juanpujol/polyunion"
+		"url": "https://github.com/juanpujol/geospread"
 	},
 	"scripts": {
 		"build": "tsup",

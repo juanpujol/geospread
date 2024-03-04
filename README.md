@@ -2,11 +2,11 @@
 
 A library designed to filter a list of geographical points, ensuring that they are spread out from each other by a minimum distance in meters, optionally starting from a specific point. By applying the Haversine algorithm, GeoSpread prunes the input list to create a more evenly distributed set of points, suitable for various geospatial applications.
 
-![example-01](./images/example-01.webp)
+![example-01](./images/geospread-ex.webp)
 
 ## Installation
 
-You can install PolyUnion via npm:
+You can install GeoSpread via npm:
 
 ```shell
 npm install geospread
