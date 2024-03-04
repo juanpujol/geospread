@@ -1,6 +1,6 @@
 {
 	"name": "geospread",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "Filter points by minimum distance in meters and optionally starting from a specific point",
 	"main": "./dist/index.js",
 	"module": "./dist/index.mjs",
