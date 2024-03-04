@@ -39,3 +39,7 @@ The function has 2 parameters:
 - `points` - an array of points in the format `[longitude, latitude]`. Note the order is longitude first, latitude second.
 - `minDistance` - the minimum distance in meters between each point
 - `startPoint` - an optional starting point in the format `[longitude, latitude]`. Note the order is longitude first, latitude second.
+
+## Credits
+
+I'm not smart enough to have created this from scratch. This took some back and forth with [ChatGPT](https://chat.openai.com) and I'm not ashamed to admit it. 😄
