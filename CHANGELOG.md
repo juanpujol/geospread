@@ -7,7 +7,7 @@
 ### Refactors & Improvements ✨
 
 - Updated the `README.md` file with a better description and usage example.
-- Improve types and tests📝
+- Improve types and tests 📝
 
 ## v0.1.2 (2024-03-04)
 
