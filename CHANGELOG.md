@@ -7,7 +7,7 @@
 ### Fixes 🐞
 
 - Fixed the `README.md` example coordinates.
-
+- 
 ## v0.1.3 (2024-03-05)
 
 ### Refactors & Improvements ✨
