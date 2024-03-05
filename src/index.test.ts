@@ -2,23 +2,24 @@ import { describe, it, expect } from 'vitest';
 import { geospread } from './index';
 
 const points: [number, number][] = [
-	[-73.9956, 40.7481],
-	[-73.993, 40.7479],
-	[-73.9939, 40.7466],
-	[-73.9915, 40.7454],
-	[-73.9909, 40.7461]
+	[40.7481, -73.9956],
+	[40.7479, -73.993],
+	[40.7466, -73.9939],
+	[40.7454, -73.9915],
+	[40.7461, -73.9909]
 ];
 
 describe('geospread', () => {
 	it('should filter points based on minimum distance', () => {
 		const minDistance = 130;
-		const startPoint: [number, number] = [-73.9939, 40.7466];
+		const startPoint: [number, number] = [40.7454, -73.9915];
 		const result = geospread(points, minDistance, startPoint);
 
 		expect(result).toEqual([
-			[-73.9939, 40.7466],
-			[-73.9956, 40.7481],
-			[-73.9915, 40.7454]
+			[ 40.7454, -73.9915 ],
+			[ 40.7481, -73.9956 ],
+			[ 40.7479, -73.993 ],
+			[ 40.7466, -73.9939 ]
 		]);
 	});
 
@@ -37,9 +38,10 @@ describe('geospread', () => {
 		const result = geospread(points, minDistance);
 
 		expect(result).toEqual([
-			[-73.9956, 40.7481],
-			[-73.993, 40.7479],
-			[-73.9915, 40.7454]
+			[ 40.7481, -73.9956 ],
+			[ 40.7479, -73.993 ],
+			[ 40.7466, -73.9939 ],
+			[ 40.7454, -73.9915 ]
 		]);
 	});
 });
