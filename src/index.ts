@@ -4,7 +4,9 @@
  * @param coord2 The second coordinate in the format [latitude, longitude].
  * @returns The haversine distance between the two coordinates in meters.
  */
-export function haversineDistance(coord1: [number, number], coord2: [number, number]): number {
+type Coordinate = [number, number];
+
+function haversineDistance(coord1: Coordinate, coord2: Coordinate): number {
 	const [lat1, lon1] = coord1;
 	const [lat2, lon2] = coord2;
 	const toRadians = (angle: number): number => angle * (Math.PI / 180);
@@ -32,11 +34,11 @@ export function haversineDistance(coord1: [number, number], coord2: [number, num
  * @returns An array of points that satisfy the minimum distance constraint.
  */
 export function geospread(
-	points: [number, number][],
+	points: Coordinate[],
 	minDistance: number,
-	startPoint: [number, number] | null = null
-): [number, number][] {
-	const filteredPoints: [number, number][] = startPoint ? [startPoint] : []; // Start with the specified startPoint if provided
+	startPoint: Coordinate | null = null
+): Coordinate[] {
+	const filteredPoints: Coordinate[] = startPoint ? [startPoint] : []; // Start with the specified startPoint if provided
 
 	for (let i = 0; i < points.length; i++) {
 		if (startPoint && points[i] === startPoint) continue; // Skip if it's the startPoint

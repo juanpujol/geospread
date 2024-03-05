@@ -2,6 +2,13 @@
 
 # GeoSpread Changelog
 
+## v0.1.3 (2024-03-05)
+
+### Refactors & Improvements ✨
+
+- Updated the `README.md` file with a better description and usage example.
+- Improve types and tests 📝
+
 ## v0.1.2 (2024-03-04)
 
 ### Fixes 🐞
