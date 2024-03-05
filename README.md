@@ -19,19 +19,20 @@ import geospread from 'geospread';
 
 // Example GeoJSON FeatureCollection input
 const points = [
-  [-73.9956, 40.7481],
-  [-73.9930, 40.7479],
-  [-73.9939, 40.7466],
-  [-73.9915, 40.7454],
-  [-73.9909, 40.7461]
+  [40.7481, -73.9956],
+  [40.7479, -73.993],
+  [40.7466, -73.9939],
+  [40.7454, -73.9915],
+  [40.7461, -73.9909]
 ];
 
 const minDistance = 130;
-const startPoint = [-73.9939, 40.7466];
+const startPoint = [40.7454, -73.9915];
 const result = geospread(points, minDistance, startPoint);
 
 console.log(result);
-// [[ -73.9939, 40.7466 ], [ -73.9956, 40.7481 ], [ -73.9915, 40.7454 ]]
+
+// [40.7454, -73.9915], [40.7481, -73.9956], [40.7479, -73.993],[40.7466, -73.9939]
 ```
 
 The function has 2 parameters:
