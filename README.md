@@ -36,9 +36,9 @@ console.log(result);
 
 The function has 2 parameters:
 
-- `points` - an array of points in the format `[longitude, latitude]`. Note the order is longitude first, latitude second.
+- `points` - an array of points in the format `[latitude, longitude]`.
 - `minDistance` - the minimum distance in meters between each point
-- `startPoint` - an optional starting point in the format `[longitude, latitude]`. Note the order is longitude first, latitude second.
+- `startPoint` - an optional starting point in the format `[latitude, longitude]`.
 
 ## Credits
 
